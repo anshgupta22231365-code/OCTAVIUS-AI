@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "jekyll:build": "npm run build && bundle exec jekyll build",
+    "jekyll:serve": "npm run build && bundle exec jekyll serve --incremental --livereload"
   },
   "dependencies": {
     "clsx": "2.1.1",
